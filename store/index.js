@@ -1,12 +1,11 @@
-import Model from './model';
+import globalState from './globalState';
 
-export const testStore = new Model({
-  initialState: {
-    isLogin: false,
-  },
-  actions: {
-    onChange(bool) {
-      return { isLogin: bool };
-    },
-  },
+const useStore = globalState({
+  archiveData: null,
+  cancelActive: false,
+  redoActive: false,
+  thumbnailList: [],
+  activeThumbnailIndex: 0,
 });
+
+export default useStore;

@@ -1,6 +1,6 @@
 module.exports = {
-  basePath: process.env.BASE_PATH,
-  assetPrefix: process.env.ASSET_PREFIX,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX,
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
